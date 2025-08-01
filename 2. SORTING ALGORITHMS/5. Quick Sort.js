@@ -10,6 +10,7 @@ function partition(arr, low, high) {
   let pivot = arr[low];
   let i = low;
   let j = high;
+  // This looks like T.C -> O(N^2) but if you actually see how the loop's functioning, its going only up untill N in its worst case.
   while (i < j) {
     while (arr[i] <= pivot && i <= high - 1) {
       i += 1;
@@ -23,6 +24,7 @@ function partition(arr, low, high) {
       arr[j] = temp;
     }
   }
+  // Now swapping the pivot element at its correct place and returning its index.
   let temp = arr[low];
   arr[low] = arr[j];
   arr[j] = temp;
