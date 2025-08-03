@@ -38,7 +38,6 @@ var isPalindrome = function (x) {
 };
 
 // LEARNING:
-// Here, I only handled the obvious edge case, i.e the 2**31 one, WHICH ISNT EVEN NECESSARY, as you're inputting a number, which is already bound to be inside that range, & you're only reversing it, so there's no way that you'll go over the range now!
 
 // Some imp test/edge cases that you missed were:
 // x (i.e the input) <0 (-ve)

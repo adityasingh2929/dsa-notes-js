@@ -31,7 +31,7 @@ if(c==2){
 
 
 
-
+// Optimized approach.
 
 let x = 1;
 let counter = 0;

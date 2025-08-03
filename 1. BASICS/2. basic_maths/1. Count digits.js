@@ -1,13 +1,14 @@
 // Write a Program to count the digits of the given number:
 
-// let n = 12345;
+let n = 5;
 // let ref = n;
 // let c = 0;
 
 // while (ref != 0) {
 //   c += 1;
-//   ref = Math.floor(ref / 10);
+//   ref = Math.trunc(ref / 10);
 // }
+
 
 // console.log(`${n} has ${c} digits.`);
 
@@ -17,8 +18,8 @@
 
 // console.log();
 
-// let cnt = Math.floor(Math.log10(n) + 1);
-// console.log(`${n} has ${cnt} digits.`);
+let cnt = Math.trunc(Math.log10(n) + 1);
+console.log(`${n} has ${cnt} digits.`);
 
 // Therefore the timeComplexity of both of the methods is:  O(log10(n))  OR ~ O(log(n))
 

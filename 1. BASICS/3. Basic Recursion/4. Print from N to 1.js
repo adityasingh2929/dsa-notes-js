@@ -9,4 +9,3 @@ function printing(cnt) {
 }
 let n = [9];
 printing(n); // passing simply the name means that we're passing the first element only.
-console.log(n[0]);

@@ -29,7 +29,7 @@
 //  i * (36) = N(36) , we can get this 36 by -> N/i
 //     but we've to be careful as we might get a duplicate value (6 in this case). So we'll use an if statement to avoid that.
 
-let x = 36;
+let x = 12;
 divisors = [];
 
 for (let i = 1; i * i <= x; i++) {
