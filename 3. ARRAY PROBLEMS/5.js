@@ -40,37 +40,7 @@
 
 // console.log(arr);
 
-// brute-forced approach (mine but inspired from striver)      -> PENDING.
-let arrVar = [10, 20, 30, 40, 50, 60, 70];
-let d = 3; // ans: [50,60,70,10,20,30,40]
-let size = arrVar.length;
-let tempoArr = new Array(d);
-for (let i = size - d; i < size; i++) {
-  tempoArr[i - (size - d)] = arrVar[i];
-}
-let first = 0;
-for (let i = d; i < size; i++) {
-  if (i == d) first = arrVar[i];
-  arrVar[i] = arrVar[i - d];
-}
-arrVar[size - 1] = first;
 
-for (let i = 0; i < d; i++) {
-  arrVar[i] = tempoArr[i];
-}
-
-console.log(arrVar);
-
-// let size = arrVar.length;
-// for(let i=d;i<size;i++){
-//   arrVar[i-d] = arrVar[i];
-// }
-
-// for(let i=size-d;i<size;i++){
-//   arrVar[i] = tempoArr[i-(size-d)];
-// }
-
-// console.log(arrVar);
 
 // Left Rotate an array by k positions.
 
@@ -93,3 +63,17 @@ console.log(arrVar);
 // }
 
 // console.log(arrVar);
+
+
+// t.c -> O(n+d)   || s.c -> O(d)
+
+
+// OPTIMIZED APPROACH (striver's)
+  // we'll reverse the first d elm, then the n-d elm, and then the resultant array. 
+
+let arr = [10,20,30,40,50];
+let d = 3;   // ans = [40,50,10,20,30] after rotating from left by 3 places.
+
+for(let i=0;i<d;i++){
+  
+}
