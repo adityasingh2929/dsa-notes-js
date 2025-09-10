@@ -10,18 +10,11 @@
 // In hashing, we precompute the no. of times an element is appearing while forming the array itself, and then store that frequency data in a 'hash array'.
 
 // So lets understand hashing (in case of numbers).
-
+ 
 // Given that the max value is 12 (in this case):
 
 let arr = [12, 3, 1, 4, 5, 6, 7, 3, 7, 7, 3, 5];
 
-let query1 = 3;
-let query2 = 12;
-let query3 = 7;
-let query4 = 6;
-let query5 = 4;
-let query6 = 1;
-let query7 = 5;
 
 let hash = new Array(1000).fill(0);
 for (let i = 0; i < arr.length; i++) {

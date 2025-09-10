@@ -22,3 +22,6 @@ for (let i = 0; i < str.length; i++) {
 for(let i=90;i<131;i++){
     console.log(`${i} : ${hashh[i]}`);
 }
+
+let yolo = " ";
+console.log(yolo.charCodeAt(0));
